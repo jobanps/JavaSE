@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class RecipeCalc {
 
@@ -16,6 +17,21 @@ public class RecipeCalc {
 		 */
 		
 		System.out.println("Recipe Class");
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("How many Timbits you want !");
+		double timbitsCount = input.nextDouble();
+				
+		double numberOfBatches = timbitsCount / 48;
+		
+		System.out.println("Cups of Sugar : " + (numberOfBatches * 1.5));
+		System.out.println("Cups of Butter : " + (numberOfBatches * 1));
+		System.out.println("Cups of Flour : " + (numberOfBatches * 2.75));
+		
+		
+		
+		input.close();
 		
 	}
 }
