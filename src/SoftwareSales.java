@@ -29,7 +29,7 @@ public class SoftwareSales {
 		finalAmount = subTotal - discountAmount;
 		
 		System.out.println("Sub Total : $" + subTotal);
-		System.out.println("Final Total : $" + finalAmount);
+		System.out.printf("Final Total : $%.2f \n", finalAmount);
 		System.out.println("Discount : " + (discount * 100) + "%");
 		System.out.println("Discount Amount : $" + discountAmount);
 		
