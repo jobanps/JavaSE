@@ -16,9 +16,19 @@ public class StringBasics {
 		String subStr = name.substring(5,10);
 		System.out.println("SubString 5,10 : " + subStr);
 		
+		String name2 = "JObanrpeet SIngh";
 		
+		if(name.equals(name2)) {
+			System.out.println("String are Equal");
+		} else {
+			System.out.println("String are not Equal");
+		}
 		
-		
+		String lowerStr = name.toLowerCase();
+		System.out.println("String in lowercase : " + lowerStr);
+	
+		String upperStr = name.toUpperCase();
+		System.out.println("String in uppercase : " + upperStr);
 	}
 
 }
