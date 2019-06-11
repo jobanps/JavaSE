@@ -1,15 +1,17 @@
 package w06OOPs;
 
+import java.util.ArrayList;
+
 public class Player {
 
 	private String name;
 	private double money;
-	private Pokemon pokemon;
+	private ArrayList<Pokemon> pokemonArray = new ArrayList<Pokemon>();
 	
-	public Player(String name, double money, Pokemon pokemon) {
+	public Player(String name, double money, ArrayList<Pokemon> pokemonArr) {
 		this.name = name;
 		this.money = money;
-		this.pokemon = pokemon;
+		this.pokemonArray = pokemonArr;
 	}
 	
 	public String getName() {
@@ -24,16 +26,20 @@ public class Player {
 	public void setMoney(double money) {
 		this.money = money;
 	}
-	public Pokemon getPokemon() {
-		return pokemon;
-	}
-	public void setPokemon(Pokemon pokemon) {
-		this.pokemon = pokemon;
-	}
 	
+	
+	
+	public ArrayList<Pokemon> getPokemonArray() {
+		return pokemonArray;
+	}
+
+	public void setPokemonArray(ArrayList<Pokemon> pokemonArray) {
+		this.pokemonArray = pokemonArray;
+	}
+
 	public String toString() {
 		
-		return this.getName() + " got $" +  this.getMoney() + " and have " + this.getPokemon().toString();
+		return this.getName() + " got $" +  this.getMoney() + " and have " + this.getPokemonArray().toString();
 	}
 	
 	
