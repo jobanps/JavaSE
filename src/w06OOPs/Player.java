@@ -4,9 +4,9 @@ public class Player {
 
 	private String name;
 	private double money;
-	private Pokemon pokemon[];
+	private Pokemon pokemon;
 	
-	public Player(String name, double money, Pokemon[] pokemon) {
+	public Player(String name, double money, Pokemon pokemon) {
 		this.name = name;
 		this.money = money;
 		this.pokemon = pokemon;
@@ -24,10 +24,10 @@ public class Player {
 	public void setMoney(double money) {
 		this.money = money;
 	}
-	public Pokemon[] getPokemon() {
+	public Pokemon getPokemon() {
 		return pokemon;
 	}
-	public void setPokemon(Pokemon[] pokemon) {
+	public void setPokemon(Pokemon pokemon) {
 		this.pokemon = pokemon;
 	}
 	
