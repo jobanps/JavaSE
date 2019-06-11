@@ -30,5 +30,10 @@ public class Pokemon {
 	public void setType(String type) {
 		this.type = type;
 	}
+	
+	public String toString() {
+		
+		return this.getName() + " with " +  this.getHp() + "HP of " + this.getType() + " type pokemon.";
+	}
 
 }

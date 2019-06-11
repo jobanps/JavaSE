@@ -31,6 +31,11 @@ public class Player {
 		this.pokemon = pokemon;
 	}
 	
+	public String toString() {
+		
+		return this.getName() + " got $" +  this.getMoney() + " and have " + this.getPokemon().toString();
+	}
+	
 	
 	
 }
