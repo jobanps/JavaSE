@@ -73,13 +73,13 @@ public class ArraysExamples {
 		names[0] = null;
 		*/
 		
-		String temp = names[0];
-		String temp1;
+		String newElement = names[0];
+		String currentElement;
 		for(int i = 1; i < names.length; i++) {
 			
-			temp1 = names[i];
-			names[i] = temp;
-			temp = temp1;
+			currentElement = names[i];
+			names[i] = newElement;
+			newElement = currentElement;
 		}
 		names[0] = null;
 		

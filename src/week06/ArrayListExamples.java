@@ -30,6 +30,10 @@ public class ArrayListExamples {
 			System.out.println(names.get(i));
 		
 		}
+		
+		names.add("Gundeep");
+		names.add("Harman");
+		names.add("Manpreet");
 		// 5. Get one person out of the list
 		
 		
