@@ -1,14 +1,34 @@
 package week08OOPPrac;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-class CircleJunit {
+public class CircleJunit {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void testConstructor() {
+		Circle c = new Circle(5);
+		assertEquals(5, c.getRadius(),0);
+	}
+
+	@Test
+	public void testArea() {
+		Circle c = new Circle(5);
+		assertEquals(78.5, c.calcArea(),0.1);
+		
+	}
+
+	@Test
+	public void testCircum() {
+		Circle c = new Circle(5);
+		assertEquals(31.4, c.calcCircumference(),0.1);
+	}
+
+	@Test
+	public void testDiameter() {
+		Circle c = new Circle(5);
+		assertEquals(10, c.calcDiameter(),0);
 	}
 
 }
