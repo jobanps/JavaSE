@@ -8,14 +8,15 @@ public class Functions {
 		// TODO Auto-generated method stub
 
 		//calcTax(100);
+		Functions obj = new Functions();
 		
-		System.out.println("Grade : " + testScores());
+		System.out.println("Grade : " + obj.testScores());
 		
 	}
 	
 	/* Function to calculate the amount of Tax you need to pay */
 	
-	public static void calcTax(double price) {
+	public  void calcTax(double price) {
 		
 		double taxAmount = price * 0.13;
 		System.out.println("Tax : " + taxAmount);
@@ -34,14 +35,14 @@ public class Functions {
 		// -- parameter 2 is time (in seconds)
 		// Your function should OUTPUT the result to console
 	
-	public static void calcDistance(double gravity, int time) {
+	public  void calcDistance(double gravity, int time) {
 		
 		double distance = 0.5 * gravity * time;
 		
 		System.out.println("Distance : " + distance);
 	}
 	
-	public static String testScores() {
+	public  String testScores() {
 		
 		Scanner input = new Scanner(System.in);
 		int marks;

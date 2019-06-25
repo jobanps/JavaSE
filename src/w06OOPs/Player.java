@@ -2,11 +2,12 @@ package w06OOPs;
 
 import java.util.ArrayList;
 
-public class Player {
+public class Player 
+{
 
 	private String name;
 	private double money;
-	private ArrayList<Pokemon> pokemonArray = new ArrayList<Pokemon>();
+	private ArrayList<Pokemon> pokemonArray;
 	
 	public Player(String name, double money, ArrayList<Pokemon> pokemonArr) {
 		this.name = name;
